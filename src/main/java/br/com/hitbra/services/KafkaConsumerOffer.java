@@ -20,7 +20,7 @@ public class KafkaConsumerOffer
 {
 	private static final Logger LOG = getLogger( KafkaConsumerOffer.class.getName( ) );
 
-	@KafkaListener( topics = "${hmk.topic.offer}", groupId = "${hmk.topic.group-id}" )
+	@KafkaListener( topics = "${hitbra.topic.offer}", groupId = "${hitbra.topic.group-id}" )
 	public void processMessage( ConsumerRecord<String, Offer> offerAvro )
 	{
 		LOG.info( "KafkaConsumerOffer :: received content offer ::  " + offerAvro  );

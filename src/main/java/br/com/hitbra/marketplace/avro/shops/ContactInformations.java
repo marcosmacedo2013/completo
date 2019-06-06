@@ -3,7 +3,7 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package br.com.hitbra.marketplace.avro.shops;
+package br.com.hitbra.marketplace.avro.shops;  
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ContactInformations extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
@@ -310,12 +310,12 @@ public class ContactInformations extends org.apache.avro.specific.SpecificRecord
   }
   
   /** Creates a new ContactInformations RecordBuilder by copying an existing Builder */
-  public static br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder newBuilder( br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder other) {
+  public static br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder newBuilder(br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder other) {
     return new br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder(other);
   }
   
   /** Creates a new ContactInformations RecordBuilder by copying an existing ContactInformations instance */
-  public static br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder newBuilder( br.com.hitbra.marketplace.avro.shops.ContactInformations other) {
+  public static br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder newBuilder(br.com.hitbra.marketplace.avro.shops.ContactInformations other) {
     return new br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder(other);
   }
   
@@ -473,7 +473,7 @@ public class ContactInformations extends org.apache.avro.specific.SpecificRecord
     }
     
     /** Sets the value of the 'city' field */
-    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setCity( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setCity(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.city = value;
       fieldSetFlags()[0] = true;
@@ -498,7 +498,7 @@ public class ContactInformations extends org.apache.avro.specific.SpecificRecord
     }
     
     /** Sets the value of the 'civility' field */
-    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setCivility( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setCivility(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.civility = value;
       fieldSetFlags()[1] = true;
@@ -523,7 +523,7 @@ public class ContactInformations extends org.apache.avro.specific.SpecificRecord
     }
     
     /** Sets the value of the 'country' field */
-    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setCountry( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setCountry(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.country = value;
       fieldSetFlags()[2] = true;
@@ -548,7 +548,7 @@ public class ContactInformations extends org.apache.avro.specific.SpecificRecord
     }
     
     /** Sets the value of the 'email' field */
-    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setEmail( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setEmail(java.lang.CharSequence value) {
       validate(fields()[3], value);
       this.email = value;
       fieldSetFlags()[3] = true;
@@ -573,7 +573,7 @@ public class ContactInformations extends org.apache.avro.specific.SpecificRecord
     }
     
     /** Sets the value of the 'fax' field */
-    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setFax( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setFax(java.lang.CharSequence value) {
       validate(fields()[4], value);
       this.fax = value;
       fieldSetFlags()[4] = true;
@@ -598,7 +598,7 @@ public class ContactInformations extends org.apache.avro.specific.SpecificRecord
     }
     
     /** Sets the value of the 'firstname' field */
-    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setFirstname( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setFirstname(java.lang.CharSequence value) {
       validate(fields()[5], value);
       this.firstname = value;
       fieldSetFlags()[5] = true;
@@ -623,7 +623,7 @@ public class ContactInformations extends org.apache.avro.specific.SpecificRecord
     }
     
     /** Sets the value of the 'lastname' field */
-    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setLastname( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setLastname(java.lang.CharSequence value) {
       validate(fields()[6], value);
       this.lastname = value;
       fieldSetFlags()[6] = true;
@@ -648,7 +648,7 @@ public class ContactInformations extends org.apache.avro.specific.SpecificRecord
     }
     
     /** Sets the value of the 'phone' field */
-    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setPhone( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setPhone(java.lang.CharSequence value) {
       validate(fields()[7], value);
       this.phone = value;
       fieldSetFlags()[7] = true;
@@ -673,7 +673,7 @@ public class ContactInformations extends org.apache.avro.specific.SpecificRecord
     }
     
     /** Sets the value of the 'phone_secondary' field */
-    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setPhoneSecondary( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setPhoneSecondary(java.lang.CharSequence value) {
       validate(fields()[8], value);
       this.phone_secondary = value;
       fieldSetFlags()[8] = true;
@@ -698,7 +698,7 @@ public class ContactInformations extends org.apache.avro.specific.SpecificRecord
     }
     
     /** Sets the value of the 'state' field */
-    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setState( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setState(java.lang.CharSequence value) {
       validate(fields()[9], value);
       this.state = value;
       fieldSetFlags()[9] = true;
@@ -723,7 +723,7 @@ public class ContactInformations extends org.apache.avro.specific.SpecificRecord
     }
     
     /** Sets the value of the 'street1' field */
-    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setStreet1( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setStreet1(java.lang.CharSequence value) {
       validate(fields()[10], value);
       this.street1 = value;
       fieldSetFlags()[10] = true;
@@ -748,7 +748,7 @@ public class ContactInformations extends org.apache.avro.specific.SpecificRecord
     }
     
     /** Sets the value of the 'street2' field */
-    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setStreet2( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setStreet2(java.lang.CharSequence value) {
       validate(fields()[11], value);
       this.street2 = value;
       fieldSetFlags()[11] = true;
@@ -773,7 +773,7 @@ public class ContactInformations extends org.apache.avro.specific.SpecificRecord
     }
     
     /** Sets the value of the 'web_site' field */
-    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setWebSite( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setWebSite(java.lang.CharSequence value) {
       validate(fields()[12], value);
       this.web_site = value;
       fieldSetFlags()[12] = true;
@@ -798,7 +798,7 @@ public class ContactInformations extends org.apache.avro.specific.SpecificRecord
     }
     
     /** Sets the value of the 'zip_code' field */
-    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setZipCode( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ContactInformations.Builder setZipCode(java.lang.CharSequence value) {
       validate(fields()[13], value);
       this.zip_code = value;
       fieldSetFlags()[13] = true;

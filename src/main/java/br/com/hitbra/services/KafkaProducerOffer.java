@@ -12,8 +12,8 @@ public class KafkaProducerOffer
 	@Autowired
 	private KafkaTemplate<String, OfferModel> kafkaTemplateOffer;
 
-	@Value( "${hmk.topic.offer}" )
-	String kafkaTopic = "poc.marketplace.hybris_offer";
+	@Value( "${hitbra.topic.offer}" )
+	String kafkaTopic = "poc.hitbra.offer";
 
 	public void send( OfferModel offer )
 	{

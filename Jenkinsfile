@@ -14,7 +14,7 @@ pipeline {
       stage('Build') {
         steps {
           echo "Notificar início de build"
-          notifySlackVA ("Estou iniciando o processo de build do Hybris_Mediator_Kafka", "INICIADO")
+          notifySlackVA ("Estou iniciando o processo de build do Completo", "INICIADO")
 
           echo "Executando build do projeto"
           sh 'mvn clean install'
@@ -38,24 +38,24 @@ pipeline {
           echo 'Preparing workspace'
           echo '#########################'
           sh """
-            rm -rf ../hmk_deploy-dev
-            mkdir ../hmk_deploy-dev
-            mkdir ../hmk_deploy-dev/target
-            cp -r Dockerfile ../hmk_deploy-dev/Dockerfile
-            cp -r target/*.war ../hmk_deploy-dev/target/
-            cp -r .ebextensions ../hmk_deploy-dev/.ebextensions
-            cp -r .configuration/context.xml ../hmk_deploy-dev/target/context.xml
-            cp -r .elasticbeanstalk ../hmk_deploy-dev/.elasticbeanstalk
-            cp -r .configuration/newrelic/ ../hmk_deploy-dev/newrelic
-            cp -r .configuration/certs/ ../hmk_deploy-dev/certs
+            rm -rf ../hitbra-deploy-dev
+            mkdir ../hitbra-deploy-dev
+            mkdir ../hitbra-deploy-dev/target
+            cp -r Dockerfile ../hitbra-deploy-dev/Dockerfile
+            cp -r target/*.war ../hitbra-deploy-dev/target/
+            cp -r .ebextensions ../hitbra-deploy-dev/.ebextensions
+            cp -r .configuration/context.xml ../hitbra-deploy-dev/target/context.xml
+            cp -r .elasticbeanstalk ../hitbra-deploy-dev/.elasticbeanstalk
+            cp -r .configuration/newrelic/ ../hitbra-deploy-dev/newrelic
+            cp -r .configuration/certs/ ../hitbra-deploy-dev/certs
           """
           echo '##################################'
           echo 'Deploying to dev environment'
           echo '##################################'
           withAWS(credentials:'svc_elasticbeanstalk_app') {
             sh """
-              cd ../hmk_deploy-dev
-              eb deploy mktplace-va-dev
+              cd ../hitbra-deploy-dev
+              eb deploy hitbra-dev
             """
             }
           }
@@ -70,24 +70,24 @@ pipeline {
             echo 'Preparing workspace'
             echo '#########################'
             sh """
-              rm -rf ../hmk_deploy-hom
-              mkdir ../hmk_deploy-hom
-              mkdir ../hmk_deploy-hom/target
-              cp -r Dockerfile ../hmk_deploy-hom/Dockerfile
-              cp -r target/*.war ../hmk_deploy-hom/target/
-              cp -r .ebextensions ../hmk_deploy-hom/.ebextensions
-              cp -r .configuration/context.xml ../hmk_deploy-hom/target/context.xml
-              cp -r .elasticbeanstalk ../hmk_deploy-hom/.elasticbeanstalk
-              cp -r .configuration/newrelic/ ../hmk_deploy-hom/newrelic
-              cp -r .configuration/certs/ ../hmk_deploy-hom/certs
+              rm -rf ../hitbra-deploy-hom
+              mkdir ../hitbra-deploy-hom
+              mkdir ../hitbra-deploy-hom/target
+              cp -r Dockerfile ../hitbra-deploy-hom/Dockerfile
+              cp -r target/*.war ../hitbra-deploy-hom/target/
+              cp -r .ebextensions ../hitbra-deploy-hom/.ebextensions
+              cp -r .configuration/context.xml ../hitbra-deploy-hom/target/context.xml
+              cp -r .elasticbeanstalk ../hitbra-deploy-hom/.elasticbeanstalk
+              cp -r .configuration/newrelic/ ../hitbra-deploy-hom/newrelic
+              cp -r .configuration/certs/ ../hitbra-deploy-hom/certs
             """
             echo '##################################'
             echo 'Deploying to dev environment'
             echo '##################################'
             withAWS(credentials:'svc_elasticbeanstalk_app') {
               sh """
-                cd ../hmk_deploy-hom
-                eb deploy mktplace-va-qa-1
+                cd ../hitbra-deploy-hom
+                eb deploy hitbra-prd
               """
               }
             }
@@ -108,9 +108,9 @@ pipeline {
 
 def notifySlackVA(String details, String buildStatus = 'INICIADO') {
 
-    def url = "https://hitbra-sistemas.slack.com/services/hooks/jenkins-ci/"
+    def url = "https://hitbra-slack.com/services/hooks/jenkins-ci/"
     def token = "puDAFSml6ciHD6qL3x598MZu"
-    def channel = "#venda-assistida"
+    def channel = "#completo"
 
     buildStatus =  buildStatus ?: 'SUCESSO'
 

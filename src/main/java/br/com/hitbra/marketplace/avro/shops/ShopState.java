@@ -3,7 +3,7 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package br.com.hitbra.marketplace.avro.shops;
+package br.com.hitbra.marketplace.avro.shops;  
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public enum ShopState { 

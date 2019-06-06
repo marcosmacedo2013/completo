@@ -51,13 +51,13 @@ public class MongoDataStore implements DataStore
 		if ( MONGO_URI_HOST_PRIMARY == null )
 		{
 			System.out.println( " Configuration is null " ) ;
-			MONGO_URI_HOST_PRIMARY = "mongodb://va:{voD#1212121212@ds239372-a0-external.gxl53.fleet.mlab.com:39372/mktplace_develop?ssl=true" ;
-			MONGO_URI_HOST_SECONDARY = "mongodb://va:{voD#1212121212@ds239372-a1-external.gxl53.fleet.mlab.com:39372/mktplace_develop?ssl=true" ;
+			MONGO_URI_HOST_PRIMARY = "mongodb://hitbra:12345@ds239372-a0-external.gxl53.fleet.mlab.com:39372/hitbra_develop?ssl=true" ;
+			MONGO_URI_HOST_SECONDARY = "mongodb://hitbra:12345@ds239372-a1-external.gxl53.fleet.mlab.com:39372/hitbra_develop?ssl=true" ;
 			SHOP_COLLECTION = "event_shop_outbound" ;
 			OFFER_COLLECTION = "event_offer_outbound" ;
 			ERROR_COLLECTION = "event_errors" ;
 			TRACKING_COLLECTION= "event_tracking" ;
-			MONGO_DATABASE="mktplace_develop" ;
+			MONGO_DATABASE="hitbra_develop" ;
 		}
 		System.out.println( " MONGO_URI_HOST_PRIMARY -> " + MONGO_URI_HOST_PRIMARY ) ;
 		System.out.println( " MONGO_URI_HOST_SECONDARY -> " + MONGO_URI_HOST_SECONDARY ) ;

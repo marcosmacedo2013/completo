@@ -26,26 +26,17 @@ public class KafkaConsumerConfigOffer
 {
 	private static final Logger LOG = getLogger( KafkaConsumerConfigOffer.class.getName( ) );
 
-	@Value( "${hmk.kafka.bootstrap-servers}" )
+	@Value( "${hitbra.kafka.bootstrap-servers}" )
 	private String bootstrapServer;
 
-	@Value( "${hmk.consumer.group-id}" )
+	@Value( "${hitbra.consumer.group-id}" )
 	private String groupId;
 
-	@Value( "${hmk.kafka.schema.registry}")
+	@Value( "${hitbra.kafka.schema.registry}")
 	private String schemaRegistry ;
 
-	@Value ( "${hmk.user.pwd.kafka}")
+	@Value ( "${hitbra.user.pwd.kafka}")
 	private String userPwdKafka ;
-
-	@Value ( "${hmk.truststore.location}")
-	private String trustStoreLocation ;
-
-	@Value ("${hmk.truststore.password}")
-	private String certificatePwd ;
-
-	@Value ( "${hmk.keystore.location}")
-	private String keystoreLocation ;
 
 	@Bean
 	public Map<String, Object> consumerConfigs()
@@ -67,19 +58,6 @@ public class KafkaConsumerConfigOffer
 
 		props.put(KafkaAvroDeserializerConfig.SCHEMA_REGISTRY_URL_CONFIG, schemaRegistry ) ;
 		props.put("avro.serializer.auto.register.schemas", false);
-
-		props.put("basic.auth.credentials.source", "USER_INFO");
-		props.put("basic.auth.user.info", userPwdKafka );
-
-		props.put("security.protocol", "SSL");
-		props.put("ssl.truststore.location", trustStoreLocation );
-		props.put("ssl.truststore.password", certificatePwd );
-
-		props.put("ssl.keystore.type", "PKCS12");
-		props.put("ssl.keystore.location", keystoreLocation );
-		props.put("ssl.keystore.password", certificatePwd );
-
-		props.put("ssl.key.password", certificatePwd );
 
 		props.put( KafkaAvroDeserializerConfig.SPECIFIC_AVRO_READER_CONFIG, true ) ;
 

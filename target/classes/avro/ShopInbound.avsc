@@ -1,0 +1,214 @@
+{
+    "fields": [
+        {
+            "name": "shop_id",
+            "type": "long"
+        },
+        {
+            "name": "shop_name",
+            "type": "string"
+        },
+        {
+            "name": "shop_state",
+            "type": {
+                "name": "ShopState",
+                "symbols": [
+                    "OPEN",
+                    "CLOSE",
+                    "SUSPENDED"
+                ],
+                "type": "enum"
+            }
+        },
+        {
+            "name": "logo",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "banner",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "logicalType": "time-millis",
+            "name": "date_created",
+            "type": "long"
+        },
+        {
+            "logicalType": "time-millis",
+            "name": "last_updated_date",
+            "type": "long"
+        },
+        {
+            "name": "description",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "evaluations_count",
+            "type": "long"
+        },
+        {
+            "name": "offers_count",
+            "type": "long"
+        },
+        {
+            "name": "operator_internal_id",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "order_messages_response_delay",
+            "type": [
+                "long",
+                "null"
+            ]
+        },
+        {
+            "name": "orders_count",
+            "type": "long"
+        },
+        {
+            "name": "premium",
+            "type": "boolean"
+        },
+        {
+            "name": "return_policy",
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        {
+            "name": "contact_informations",
+            "type": {
+                "fields": [
+                    {
+                        "name": "city",
+                        "type": "string"
+                    },
+                    {
+                        "name": "civility",
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    {
+                        "name": "country",
+                        "type": "string"
+                    },
+                    {
+                        "name": "email",
+                        "type": "string"
+                    },
+                    {
+                        "name": "fax",
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    {
+                        "name": "firstname",
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    {
+                        "name": "lastname",
+                        "type": "string"
+                    },
+                    {
+                        "name": "phone",
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    {
+                        "name": "phone_secondary",
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    {
+                        "name": "state",
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    {
+                        "name": "street1",
+                        "type": "string"
+                    },
+                    {
+                        "name": "street2",
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    {
+                        "name": "web_site",
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    {
+                        "name": "zip_code",
+                        "type": "string"
+                    }
+                ],
+                "name": "ContactInformations",
+                "type": "record"
+            }
+        },
+        {
+            "name": "pro_details",
+            "type": {
+                "fields": [
+                    {
+                        "name": "corporate_name",
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    {
+                        "name": "identification_number",
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    },
+                    {
+                        "name": "tax_identification_number",
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                ],
+                "name": "ProDetails",
+                "type": "record"
+            }
+        }
+    ],
+    "name": "Shop",
+    "namespace": "br.com.hitbra.marketplace.avro.shops",
+    "type": "record"
+}

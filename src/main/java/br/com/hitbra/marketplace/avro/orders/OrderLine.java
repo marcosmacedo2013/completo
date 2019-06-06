@@ -3,7 +3,7 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package br.com.hitbra.marketplace.avro.orders;
+package br.com.hitbra.marketplace.avro.orders;  
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class OrderLine extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
@@ -196,12 +196,12 @@ public class OrderLine extends org.apache.avro.specific.SpecificRecordBase imple
   }
   
   /** Creates a new OrderLine RecordBuilder by copying an existing Builder */
-  public static br.com.hitbra.marketplace.avro.orders.OrderLine.Builder newBuilder( br.com.hitbra.marketplace.avro.orders.OrderLine.Builder other) {
+  public static br.com.hitbra.marketplace.avro.orders.OrderLine.Builder newBuilder(br.com.hitbra.marketplace.avro.orders.OrderLine.Builder other) {
     return new br.com.hitbra.marketplace.avro.orders.OrderLine.Builder(other);
   }
   
   /** Creates a new OrderLine RecordBuilder by copying an existing OrderLine instance */
-  public static br.com.hitbra.marketplace.avro.orders.OrderLine.Builder newBuilder( br.com.hitbra.marketplace.avro.orders.OrderLine other) {
+  public static br.com.hitbra.marketplace.avro.orders.OrderLine.Builder newBuilder(br.com.hitbra.marketplace.avro.orders.OrderLine other) {
     return new br.com.hitbra.marketplace.avro.orders.OrderLine.Builder(other);
   }
   
@@ -305,7 +305,7 @@ public class OrderLine extends org.apache.avro.specific.SpecificRecordBase imple
     }
     
     /** Sets the value of the 'order_line_id' field */
-    public br.com.hitbra.marketplace.avro.orders.OrderLine.Builder setOrderLineId( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.orders.OrderLine.Builder setOrderLineId(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.order_line_id = value;
       fieldSetFlags()[0] = true;
@@ -330,7 +330,7 @@ public class OrderLine extends org.apache.avro.specific.SpecificRecordBase imple
     }
     
     /** Sets the value of the 'order_line_state' field */
-    public br.com.hitbra.marketplace.avro.orders.OrderLine.Builder setOrderLineState( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.orders.OrderLine.Builder setOrderLineState(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.order_line_state = value;
       fieldSetFlags()[1] = true;
@@ -355,7 +355,7 @@ public class OrderLine extends org.apache.avro.specific.SpecificRecordBase imple
     }
     
     /** Sets the value of the 'product_sku' field */
-    public br.com.hitbra.marketplace.avro.orders.OrderLine.Builder setProductSku( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.orders.OrderLine.Builder setProductSku(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.product_sku = value;
       fieldSetFlags()[2] = true;
@@ -380,7 +380,7 @@ public class OrderLine extends org.apache.avro.specific.SpecificRecordBase imple
     }
     
     /** Sets the value of the 'offer_id' field */
-    public br.com.hitbra.marketplace.avro.orders.OrderLine.Builder setOfferId( long value) {
+    public br.com.hitbra.marketplace.avro.orders.OrderLine.Builder setOfferId(long value) {
       validate(fields()[3], value);
       this.offer_id = value;
       fieldSetFlags()[3] = true;
@@ -404,7 +404,7 @@ public class OrderLine extends org.apache.avro.specific.SpecificRecordBase imple
     }
     
     /** Sets the value of the 'offer_sku' field */
-    public br.com.hitbra.marketplace.avro.orders.OrderLine.Builder setOfferSku( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.orders.OrderLine.Builder setOfferSku(java.lang.CharSequence value) {
       validate(fields()[4], value);
       this.offer_sku = value;
       fieldSetFlags()[4] = true;
@@ -429,7 +429,7 @@ public class OrderLine extends org.apache.avro.specific.SpecificRecordBase imple
     }
     
     /** Sets the value of the 'quantity' field */
-    public br.com.hitbra.marketplace.avro.orders.OrderLine.Builder setQuantity( int value) {
+    public br.com.hitbra.marketplace.avro.orders.OrderLine.Builder setQuantity(int value) {
       validate(fields()[5], value);
       this.quantity = value;
       fieldSetFlags()[5] = true;
@@ -453,7 +453,7 @@ public class OrderLine extends org.apache.avro.specific.SpecificRecordBase imple
     }
     
     /** Sets the value of the 'received_date' field */
-    public br.com.hitbra.marketplace.avro.orders.OrderLine.Builder setReceivedDate( java.lang.Long value) {
+    public br.com.hitbra.marketplace.avro.orders.OrderLine.Builder setReceivedDate(java.lang.Long value) {
       validate(fields()[6], value);
       this.received_date = value;
       fieldSetFlags()[6] = true;
@@ -478,7 +478,7 @@ public class OrderLine extends org.apache.avro.specific.SpecificRecordBase imple
     }
     
     /** Sets the value of the 'shipped_date' field */
-    public br.com.hitbra.marketplace.avro.orders.OrderLine.Builder setShippedDate( java.lang.Long value) {
+    public br.com.hitbra.marketplace.avro.orders.OrderLine.Builder setShippedDate(java.lang.Long value) {
       validate(fields()[7], value);
       this.shipped_date = value;
       fieldSetFlags()[7] = true;

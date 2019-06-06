@@ -9,9 +9,9 @@
         <version>2.0.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <artifactId>lm-hybris-mediator-kafka</artifactId>
-    <name>Leroy Merlin Hybris Mediator Kafka</name>
-    <description>Leroy Merlin Hybris Mediator Kafka</description>
+    <artifactId>exenplo-completo</artifactId>
+    <name>Exemplo Completo</name>
+    <description>Exemplo Completo</description>
     <properties>
         <main.basedir>${basedir}/../..</main.basedir>
     </properties>

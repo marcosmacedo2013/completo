@@ -9,7 +9,7 @@ public class AvroLoader
 	public static void loader( ) throws Exception
 	{
 		URL url = new URL(
-				"https://svc_hybris:12121212121212@kafka-ddp-dev-saopaulo-adeo.aivencloud.com:16325/subjects/Shop/versions/4" );
+				"https://svc_hitbra:12345@kafka-ddp-dev-saopaulo-adeo.aivencloud.com:16325/subjects/Shop/versions/4" );
 		HttpURLConnection con = ( HttpURLConnection ) url.openConnection( );
 		con.setRequestMethod( "GET" );
 

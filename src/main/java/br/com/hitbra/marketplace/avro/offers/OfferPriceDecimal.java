@@ -3,7 +3,7 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package br.com.hitbra.marketplace.avro.offers;
+package br.com.hitbra.marketplace.avro.offers;  
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class OfferPriceDecimal extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
@@ -82,12 +82,12 @@ public class OfferPriceDecimal extends org.apache.avro.specific.SpecificRecordBa
   }
   
   /** Creates a new OfferPriceDecimal RecordBuilder by copying an existing Builder */
-  public static br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal.Builder newBuilder( br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal.Builder other) {
+  public static br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal.Builder newBuilder(br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal.Builder other) {
     return new br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal.Builder(other);
   }
   
   /** Creates a new OfferPriceDecimal RecordBuilder by copying an existing OfferPriceDecimal instance */
-  public static br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal.Builder newBuilder( br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal other) {
+  public static br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal.Builder newBuilder(br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal other) {
     return new br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal.Builder(other);
   }
   
@@ -137,7 +137,7 @@ public class OfferPriceDecimal extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'precision' field */
-    public br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal.Builder setPrecision( long value) {
+    public br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal.Builder setPrecision(long value) {
       validate(fields()[0], value);
       this.precision = value;
       fieldSetFlags()[0] = true;
@@ -161,7 +161,7 @@ public class OfferPriceDecimal extends org.apache.avro.specific.SpecificRecordBa
     }
     
     /** Sets the value of the 'scale' field */
-    public br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal.Builder setScale( long value) {
+    public br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal.Builder setScale(long value) {
       validate(fields()[1], value);
       this.scale = value;
       fieldSetFlags()[1] = true;

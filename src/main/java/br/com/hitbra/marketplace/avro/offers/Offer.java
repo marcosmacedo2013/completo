@@ -3,7 +3,7 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package br.com.hitbra.marketplace.avro.offers;
+package br.com.hitbra.marketplace.avro.offers;  
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Offer extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
@@ -34,7 +34,7 @@ public class Offer extends org.apache.avro.specific.SpecificRecordBase implement
   /**
    * All-args constructor.
    */
-  public Offer( java.lang.Long offer_id, java.lang.Boolean active, java.lang.Boolean deleted, java.lang.Long shop_id, java.lang.CharSequence product_sku, java.lang.CharSequence shop_sku, br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal price, br.com.hitbra.marketplace.avro.offers.OfferOriginPriceDecimal origin_price, java.lang.Integer quantity, java.lang.Integer leadtime_to_ship, java.lang.Long discount_start_date, java.lang.Long discount_end_date, java.lang.Long available_start_date, java.lang.Long available_end_date) {
+  public Offer(java.lang.Long offer_id, java.lang.Boolean active, java.lang.Boolean deleted, java.lang.Long shop_id, java.lang.CharSequence product_sku, java.lang.CharSequence shop_sku, br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal price, br.com.hitbra.marketplace.avro.offers.OfferOriginPriceDecimal origin_price, java.lang.Integer quantity, java.lang.Integer leadtime_to_ship, java.lang.Long discount_start_date, java.lang.Long discount_end_date, java.lang.Long available_start_date, java.lang.Long available_end_date) {
     this.offer_id = offer_id;
     this.active = active;
     this.deleted = deleted;
@@ -310,12 +310,12 @@ public class Offer extends org.apache.avro.specific.SpecificRecordBase implement
   }
   
   /** Creates a new Offer RecordBuilder by copying an existing Builder */
-  public static br.com.hitbra.marketplace.avro.offers.Offer.Builder newBuilder( br.com.hitbra.marketplace.avro.offers.Offer.Builder other) {
+  public static br.com.hitbra.marketplace.avro.offers.Offer.Builder newBuilder(br.com.hitbra.marketplace.avro.offers.Offer.Builder other) {
     return new br.com.hitbra.marketplace.avro.offers.Offer.Builder(other);
   }
   
   /** Creates a new Offer RecordBuilder by copying an existing Offer instance */
-  public static br.com.hitbra.marketplace.avro.offers.Offer.Builder newBuilder( br.com.hitbra.marketplace.avro.offers.Offer other) {
+  public static br.com.hitbra.marketplace.avro.offers.Offer.Builder newBuilder(br.com.hitbra.marketplace.avro.offers.Offer other) {
     return new br.com.hitbra.marketplace.avro.offers.Offer.Builder(other);
   }
   
@@ -473,7 +473,7 @@ public class Offer extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'offer_id' field */
-    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setOfferId( long value) {
+    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setOfferId(long value) {
       validate(fields()[0], value);
       this.offer_id = value;
       fieldSetFlags()[0] = true;
@@ -497,7 +497,7 @@ public class Offer extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'active' field */
-    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setActive( boolean value) {
+    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setActive(boolean value) {
       validate(fields()[1], value);
       this.active = value;
       fieldSetFlags()[1] = true;
@@ -521,7 +521,7 @@ public class Offer extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'deleted' field */
-    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setDeleted( boolean value) {
+    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setDeleted(boolean value) {
       validate(fields()[2], value);
       this.deleted = value;
       fieldSetFlags()[2] = true;
@@ -545,7 +545,7 @@ public class Offer extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'shop_id' field */
-    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setShopId( long value) {
+    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setShopId(long value) {
       validate(fields()[3], value);
       this.shop_id = value;
       fieldSetFlags()[3] = true;
@@ -569,7 +569,7 @@ public class Offer extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'product_sku' field */
-    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setProductSku( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setProductSku(java.lang.CharSequence value) {
       validate(fields()[4], value);
       this.product_sku = value;
       fieldSetFlags()[4] = true;
@@ -594,7 +594,7 @@ public class Offer extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'shop_sku' field */
-    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setShopSku( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setShopSku(java.lang.CharSequence value) {
       validate(fields()[5], value);
       this.shop_sku = value;
       fieldSetFlags()[5] = true;
@@ -619,7 +619,7 @@ public class Offer extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'price' field */
-    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setPrice( br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal value) {
+    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setPrice(br.com.hitbra.marketplace.avro.offers.OfferPriceDecimal value) {
       validate(fields()[6], value);
       this.price = value;
       fieldSetFlags()[6] = true;
@@ -644,7 +644,7 @@ public class Offer extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'origin_price' field */
-    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setOriginPrice( br.com.hitbra.marketplace.avro.offers.OfferOriginPriceDecimal value) {
+    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setOriginPrice(br.com.hitbra.marketplace.avro.offers.OfferOriginPriceDecimal value) {
       validate(fields()[7], value);
       this.origin_price = value;
       fieldSetFlags()[7] = true;
@@ -669,7 +669,7 @@ public class Offer extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'quantity' field */
-    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setQuantity( int value) {
+    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setQuantity(int value) {
       validate(fields()[8], value);
       this.quantity = value;
       fieldSetFlags()[8] = true;
@@ -693,7 +693,7 @@ public class Offer extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'leadtime_to_ship' field */
-    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setLeadtimeToShip( int value) {
+    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setLeadtimeToShip(int value) {
       validate(fields()[9], value);
       this.leadtime_to_ship = value;
       fieldSetFlags()[9] = true;
@@ -717,7 +717,7 @@ public class Offer extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'discount_start_date' field */
-    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setDiscountStartDate( java.lang.Long value) {
+    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setDiscountStartDate(java.lang.Long value) {
       validate(fields()[10], value);
       this.discount_start_date = value;
       fieldSetFlags()[10] = true;
@@ -742,7 +742,7 @@ public class Offer extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'discount_end_date' field */
-    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setDiscountEndDate( java.lang.Long value) {
+    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setDiscountEndDate(java.lang.Long value) {
       validate(fields()[11], value);
       this.discount_end_date = value;
       fieldSetFlags()[11] = true;
@@ -767,7 +767,7 @@ public class Offer extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'available_start_date' field */
-    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setAvailableStartDate( java.lang.Long value) {
+    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setAvailableStartDate(java.lang.Long value) {
       validate(fields()[12], value);
       this.available_start_date = value;
       fieldSetFlags()[12] = true;
@@ -792,7 +792,7 @@ public class Offer extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'available_end_date' field */
-    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setAvailableEndDate( java.lang.Long value) {
+    public br.com.hitbra.marketplace.avro.offers.Offer.Builder setAvailableEndDate(java.lang.Long value) {
       validate(fields()[13], value);
       this.available_end_date = value;
       fieldSetFlags()[13] = true;

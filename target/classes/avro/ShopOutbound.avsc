@@ -1,0 +1,297 @@
+{
+    "fields": [
+        {
+            "default": null,
+            "name": "SHOP_ID",
+            "type": [
+                "null",
+                "long"
+            ]
+        },
+        {
+            "default": null,
+            "name": "SHOP_ID_STRING",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "default": null,
+            "name": "SHOP_NAME",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "default": null,
+            "name": "SHOP_STATE",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "default": null,
+            "name": "LOGO",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "default": null,
+            "name": "BANNER",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "default": null,
+            "name": "DESCRIPTION",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "default": null,
+            "name": "EVALUATIONS_COUNT",
+            "type": [
+                "null",
+                "long"
+            ]
+        },
+        {
+            "default": null,
+            "name": "OFFERS_COUNT",
+            "type": [
+                "null",
+                "long"
+            ]
+        },
+        {
+            "default": null,
+            "name": "OPERATOR_INTERNAL_ID",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "default": null,
+            "name": "ORDER_MESSAGES_RESPONSE_DELAY",
+            "type": [
+                "null",
+                "long"
+            ]
+        },
+        {
+            "default": null,
+            "name": "ORDERS_COUNT",
+            "type": [
+                "null",
+                "long"
+            ]
+        },
+        {
+            "default": null,
+            "name": "PREMIUM",
+            "type": [
+                "null",
+                "boolean"
+            ]
+        },
+        {
+            "default": null,
+            "name": "RETURN_POLICY",
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        {
+            "default": null,
+            "name": "CONTACT_INFORMATIONS",
+            "type": [
+                "null",
+                {
+                    "fields": [
+                        {
+                            "default": null,
+                            "name": "CITY",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "default": null,
+                            "name": "CIVILITY",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "default": null,
+                            "name": "COUNTRY",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "default": null,
+                            "name": "EMAIL",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "default": null,
+                            "name": "FAX",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "default": null,
+                            "name": "FIRSTNAME",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "default": null,
+                            "name": "LASTNAME",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "default": null,
+                            "name": "PHONE",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "default": null,
+                            "name": "PHONE_SECONDARY",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "default": null,
+                            "name": "STATE",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "default": null,
+                            "name": "STREET1",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "default": null,
+                            "name": "STREET2",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "default": null,
+                            "name": "WEB_SITE",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "default": null,
+                            "name": "ZIP_CODE",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        }
+                    ],
+                    "name": "KsqlDataSourceSchema_CONTACT_INFORMATIONS",
+                    "type": "record"
+                }
+            ]
+        },
+        {
+            "default": null,
+            "name": "PRO_DETAILS",
+            "type": [
+                "null",
+                {
+                    "fields": [
+                        {
+                            "default": null,
+                            "name": "CORPORATE_NAME",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "default": null,
+                            "name": "IDENTIFICATION_NUMBER",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "default": null,
+                            "name": "TAX_IDENTIFICATION_NUMBER",
+                            "type": [
+                                "null",
+                                "string"
+                            ]
+                        }
+                    ],
+                    "name": "KsqlDataSourceSchema_PRO_DETAILS",
+                    "type": "record"
+                }
+            ]
+        },
+        {
+            "default": null,
+            "name": "DATE_CREATED",
+            "type": [
+                "null",
+                "long"
+            ]
+        },
+        {
+            "default": null,
+            "name": "LAST_UPDATED_DATE",
+            "type": [
+                "null",
+                "long"
+            ]
+        }
+    ],
+    "name": "KsqlDataSourceSchema",
+    "namespace": "io.confluent.ksql.avro_schemas",
+    "type": "record"
+}

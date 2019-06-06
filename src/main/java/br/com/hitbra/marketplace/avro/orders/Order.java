@@ -3,7 +3,7 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package br.com.hitbra.marketplace.avro.orders;
+package br.com.hitbra.marketplace.avro.orders;  
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Order extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
@@ -34,7 +34,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
   /**
    * All-args constructor.
    */
-  public Order( java.lang.CharSequence commercial_id, java.lang.CharSequence order_id, java.lang.CharSequence order_state, java.lang.Long shop_id, java.util.List<br.com.hitbra.marketplace.avro.orders.OrderLine> order_lines, java.lang.CharSequence shipping_carrier_code, java.lang.CharSequence shipping_company, java.lang.CharSequence shipping_tracking, java.lang.CharSequence shipping_tracking_url, java.lang.Long delivery_date, java.lang.CharSequence invoice_access_key, java.lang.Long invoice_date, java.lang.CharSequence invoice_line, java.lang.CharSequence invoice_number) {
+  public Order(java.lang.CharSequence commercial_id, java.lang.CharSequence order_id, java.lang.CharSequence order_state, java.lang.Long shop_id, java.util.List<br.com.hitbra.marketplace.avro.orders.OrderLine> order_lines, java.lang.CharSequence shipping_carrier_code, java.lang.CharSequence shipping_company, java.lang.CharSequence shipping_tracking, java.lang.CharSequence shipping_tracking_url, java.lang.Long delivery_date, java.lang.CharSequence invoice_access_key, java.lang.Long invoice_date, java.lang.CharSequence invoice_line, java.lang.CharSequence invoice_number) {
     this.commercial_id = commercial_id;
     this.order_id = order_id;
     this.order_state = order_state;
@@ -310,12 +310,12 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
   }
   
   /** Creates a new Order RecordBuilder by copying an existing Builder */
-  public static br.com.hitbra.marketplace.avro.orders.Order.Builder newBuilder( br.com.hitbra.marketplace.avro.orders.Order.Builder other) {
+  public static br.com.hitbra.marketplace.avro.orders.Order.Builder newBuilder(br.com.hitbra.marketplace.avro.orders.Order.Builder other) {
     return new br.com.hitbra.marketplace.avro.orders.Order.Builder(other);
   }
   
   /** Creates a new Order RecordBuilder by copying an existing Order instance */
-  public static br.com.hitbra.marketplace.avro.orders.Order.Builder newBuilder( br.com.hitbra.marketplace.avro.orders.Order other) {
+  public static br.com.hitbra.marketplace.avro.orders.Order.Builder newBuilder(br.com.hitbra.marketplace.avro.orders.Order other) {
     return new br.com.hitbra.marketplace.avro.orders.Order.Builder(other);
   }
   
@@ -473,7 +473,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'commercial_id' field */
-    public br.com.hitbra.marketplace.avro.orders.Order.Builder setCommercialId( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.orders.Order.Builder setCommercialId(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.commercial_id = value;
       fieldSetFlags()[0] = true;
@@ -498,7 +498,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'order_id' field */
-    public br.com.hitbra.marketplace.avro.orders.Order.Builder setOrderId( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.orders.Order.Builder setOrderId(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.order_id = value;
       fieldSetFlags()[1] = true;
@@ -523,7 +523,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'order_state' field */
-    public br.com.hitbra.marketplace.avro.orders.Order.Builder setOrderState( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.orders.Order.Builder setOrderState(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.order_state = value;
       fieldSetFlags()[2] = true;
@@ -548,7 +548,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'shop_id' field */
-    public br.com.hitbra.marketplace.avro.orders.Order.Builder setShopId( long value) {
+    public br.com.hitbra.marketplace.avro.orders.Order.Builder setShopId(long value) {
       validate(fields()[3], value);
       this.shop_id = value;
       fieldSetFlags()[3] = true;
@@ -572,7 +572,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'order_lines' field */
-    public br.com.hitbra.marketplace.avro.orders.Order.Builder setOrderLines( java.util.List<br.com.hitbra.marketplace.avro.orders.OrderLine> value) {
+    public br.com.hitbra.marketplace.avro.orders.Order.Builder setOrderLines(java.util.List<br.com.hitbra.marketplace.avro.orders.OrderLine> value) {
       validate(fields()[4], value);
       this.order_lines = value;
       fieldSetFlags()[4] = true;
@@ -597,7 +597,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'shipping_carrier_code' field */
-    public br.com.hitbra.marketplace.avro.orders.Order.Builder setShippingCarrierCode( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.orders.Order.Builder setShippingCarrierCode(java.lang.CharSequence value) {
       validate(fields()[5], value);
       this.shipping_carrier_code = value;
       fieldSetFlags()[5] = true;
@@ -622,7 +622,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'shipping_company' field */
-    public br.com.hitbra.marketplace.avro.orders.Order.Builder setShippingCompany( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.orders.Order.Builder setShippingCompany(java.lang.CharSequence value) {
       validate(fields()[6], value);
       this.shipping_company = value;
       fieldSetFlags()[6] = true;
@@ -647,7 +647,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'shipping_tracking' field */
-    public br.com.hitbra.marketplace.avro.orders.Order.Builder setShippingTracking( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.orders.Order.Builder setShippingTracking(java.lang.CharSequence value) {
       validate(fields()[7], value);
       this.shipping_tracking = value;
       fieldSetFlags()[7] = true;
@@ -672,7 +672,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'shipping_tracking_url' field */
-    public br.com.hitbra.marketplace.avro.orders.Order.Builder setShippingTrackingUrl( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.orders.Order.Builder setShippingTrackingUrl(java.lang.CharSequence value) {
       validate(fields()[8], value);
       this.shipping_tracking_url = value;
       fieldSetFlags()[8] = true;
@@ -697,7 +697,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'delivery_date' field */
-    public br.com.hitbra.marketplace.avro.orders.Order.Builder setDeliveryDate( java.lang.Long value) {
+    public br.com.hitbra.marketplace.avro.orders.Order.Builder setDeliveryDate(java.lang.Long value) {
       validate(fields()[9], value);
       this.delivery_date = value;
       fieldSetFlags()[9] = true;
@@ -722,7 +722,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'invoice_access_key' field */
-    public br.com.hitbra.marketplace.avro.orders.Order.Builder setInvoiceAccessKey( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.orders.Order.Builder setInvoiceAccessKey(java.lang.CharSequence value) {
       validate(fields()[10], value);
       this.invoice_access_key = value;
       fieldSetFlags()[10] = true;
@@ -747,7 +747,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'invoice_date' field */
-    public br.com.hitbra.marketplace.avro.orders.Order.Builder setInvoiceDate( java.lang.Long value) {
+    public br.com.hitbra.marketplace.avro.orders.Order.Builder setInvoiceDate(java.lang.Long value) {
       validate(fields()[11], value);
       this.invoice_date = value;
       fieldSetFlags()[11] = true;
@@ -772,7 +772,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'invoice_line' field */
-    public br.com.hitbra.marketplace.avro.orders.Order.Builder setInvoiceLine( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.orders.Order.Builder setInvoiceLine(java.lang.CharSequence value) {
       validate(fields()[12], value);
       this.invoice_line = value;
       fieldSetFlags()[12] = true;
@@ -797,7 +797,7 @@ public class Order extends org.apache.avro.specific.SpecificRecordBase implement
     }
     
     /** Sets the value of the 'invoice_number' field */
-    public br.com.hitbra.marketplace.avro.orders.Order.Builder setInvoiceNumber( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.orders.Order.Builder setInvoiceNumber(java.lang.CharSequence value) {
       validate(fields()[13], value);
       this.invoice_number = value;
       fieldSetFlags()[13] = true;

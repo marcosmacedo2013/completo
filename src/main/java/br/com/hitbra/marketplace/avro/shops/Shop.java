@@ -3,7 +3,7 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package br.com.hitbra.marketplace.avro.shops;
+package br.com.hitbra.marketplace.avro.shops;  
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Shop extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
@@ -37,7 +37,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
   /**
    * All-args constructor.
    */
-  public Shop( java.lang.Long shop_id, java.lang.CharSequence shop_name, br.com.hitbra.marketplace.avro.shops.ShopState shop_state, java.lang.CharSequence logo, java.lang.CharSequence banner, java.lang.Long date_created, java.lang.Long last_updated_date, java.lang.CharSequence description, java.lang.Long evaluations_count, java.lang.Long offers_count, java.lang.CharSequence operator_internal_id, java.lang.Long order_messages_response_delay, java.lang.Long orders_count, java.lang.Boolean premium, java.lang.CharSequence return_policy, br.com.hitbra.marketplace.avro.shops.ContactInformations contact_informations, br.com.hitbra.marketplace.avro.shops.ProDetails pro_details) {
+  public Shop(java.lang.Long shop_id, java.lang.CharSequence shop_name, br.com.hitbra.marketplace.avro.shops.ShopState shop_state, java.lang.CharSequence logo, java.lang.CharSequence banner, java.lang.Long date_created, java.lang.Long last_updated_date, java.lang.CharSequence description, java.lang.Long evaluations_count, java.lang.Long offers_count, java.lang.CharSequence operator_internal_id, java.lang.Long order_messages_response_delay, java.lang.Long orders_count, java.lang.Boolean premium, java.lang.CharSequence return_policy, br.com.hitbra.marketplace.avro.shops.ContactInformations contact_informations, br.com.hitbra.marketplace.avro.shops.ProDetails pro_details) {
     this.shop_id = shop_id;
     this.shop_name = shop_name;
     this.shop_state = shop_state;
@@ -367,12 +367,12 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
   }
   
   /** Creates a new Shop RecordBuilder by copying an existing Builder */
-  public static br.com.hitbra.marketplace.avro.shops.Shop.Builder newBuilder( br.com.hitbra.marketplace.avro.shops.Shop.Builder other) {
+  public static br.com.hitbra.marketplace.avro.shops.Shop.Builder newBuilder(br.com.hitbra.marketplace.avro.shops.Shop.Builder other) {
     return new br.com.hitbra.marketplace.avro.shops.Shop.Builder(other);
   }
   
   /** Creates a new Shop RecordBuilder by copying an existing Shop instance */
-  public static br.com.hitbra.marketplace.avro.shops.Shop.Builder newBuilder( br.com.hitbra.marketplace.avro.shops.Shop other) {
+  public static br.com.hitbra.marketplace.avro.shops.Shop.Builder newBuilder(br.com.hitbra.marketplace.avro.shops.Shop other) {
     return new br.com.hitbra.marketplace.avro.shops.Shop.Builder(other);
   }
   
@@ -557,7 +557,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'shop_id' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setShopId( long value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setShopId(long value) {
       validate(fields()[0], value);
       this.shop_id = value;
       fieldSetFlags()[0] = true;
@@ -581,7 +581,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'shop_name' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setShopName( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setShopName(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.shop_name = value;
       fieldSetFlags()[1] = true;
@@ -606,7 +606,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'shop_state' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setShopState( br.com.hitbra.marketplace.avro.shops.ShopState value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setShopState(br.com.hitbra.marketplace.avro.shops.ShopState value) {
       validate(fields()[2], value);
       this.shop_state = value;
       fieldSetFlags()[2] = true;
@@ -631,7 +631,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'logo' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setLogo( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setLogo(java.lang.CharSequence value) {
       validate(fields()[3], value);
       this.logo = value;
       fieldSetFlags()[3] = true;
@@ -656,7 +656,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'banner' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setBanner( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setBanner(java.lang.CharSequence value) {
       validate(fields()[4], value);
       this.banner = value;
       fieldSetFlags()[4] = true;
@@ -681,7 +681,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'date_created' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setDateCreated( long value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setDateCreated(long value) {
       validate(fields()[5], value);
       this.date_created = value;
       fieldSetFlags()[5] = true;
@@ -705,7 +705,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'last_updated_date' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setLastUpdatedDate( long value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setLastUpdatedDate(long value) {
       validate(fields()[6], value);
       this.last_updated_date = value;
       fieldSetFlags()[6] = true;
@@ -729,7 +729,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'description' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setDescription( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setDescription(java.lang.CharSequence value) {
       validate(fields()[7], value);
       this.description = value;
       fieldSetFlags()[7] = true;
@@ -754,7 +754,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'evaluations_count' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setEvaluationsCount( long value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setEvaluationsCount(long value) {
       validate(fields()[8], value);
       this.evaluations_count = value;
       fieldSetFlags()[8] = true;
@@ -778,7 +778,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'offers_count' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setOffersCount( long value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setOffersCount(long value) {
       validate(fields()[9], value);
       this.offers_count = value;
       fieldSetFlags()[9] = true;
@@ -802,7 +802,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'operator_internal_id' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setOperatorInternalId( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setOperatorInternalId(java.lang.CharSequence value) {
       validate(fields()[10], value);
       this.operator_internal_id = value;
       fieldSetFlags()[10] = true;
@@ -827,7 +827,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'order_messages_response_delay' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setOrderMessagesResponseDelay( java.lang.Long value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setOrderMessagesResponseDelay(java.lang.Long value) {
       validate(fields()[11], value);
       this.order_messages_response_delay = value;
       fieldSetFlags()[11] = true;
@@ -852,7 +852,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'orders_count' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setOrdersCount( long value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setOrdersCount(long value) {
       validate(fields()[12], value);
       this.orders_count = value;
       fieldSetFlags()[12] = true;
@@ -876,7 +876,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'premium' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setPremium( boolean value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setPremium(boolean value) {
       validate(fields()[13], value);
       this.premium = value;
       fieldSetFlags()[13] = true;
@@ -900,7 +900,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'return_policy' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setReturnPolicy( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setReturnPolicy(java.lang.CharSequence value) {
       validate(fields()[14], value);
       this.return_policy = value;
       fieldSetFlags()[14] = true;
@@ -925,7 +925,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'contact_informations' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setContactInformations( br.com.hitbra.marketplace.avro.shops.ContactInformations value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setContactInformations(br.com.hitbra.marketplace.avro.shops.ContactInformations value) {
       validate(fields()[15], value);
       this.contact_informations = value;
       fieldSetFlags()[15] = true;
@@ -950,7 +950,7 @@ public class Shop extends org.apache.avro.specific.SpecificRecordBase implements
     }
     
     /** Sets the value of the 'pro_details' field */
-    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setProDetails( br.com.hitbra.marketplace.avro.shops.ProDetails value) {
+    public br.com.hitbra.marketplace.avro.shops.Shop.Builder setProDetails(br.com.hitbra.marketplace.avro.shops.ProDetails value) {
       validate(fields()[16], value);
       this.pro_details = value;
       fieldSetFlags()[16] = true;

@@ -3,7 +3,7 @@
  * 
  * DO NOT EDIT DIRECTLY
  */
-package br.com.hitbra.marketplace.avro.shops;
+package br.com.hitbra.marketplace.avro.shops;  
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class ProDetails extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
@@ -101,12 +101,12 @@ public class ProDetails extends org.apache.avro.specific.SpecificRecordBase impl
   }
   
   /** Creates a new ProDetails RecordBuilder by copying an existing Builder */
-  public static br.com.hitbra.marketplace.avro.shops.ProDetails.Builder newBuilder( br.com.hitbra.marketplace.avro.shops.ProDetails.Builder other) {
+  public static br.com.hitbra.marketplace.avro.shops.ProDetails.Builder newBuilder(br.com.hitbra.marketplace.avro.shops.ProDetails.Builder other) {
     return new br.com.hitbra.marketplace.avro.shops.ProDetails.Builder(other);
   }
   
   /** Creates a new ProDetails RecordBuilder by copying an existing ProDetails instance */
-  public static br.com.hitbra.marketplace.avro.shops.ProDetails.Builder newBuilder( br.com.hitbra.marketplace.avro.shops.ProDetails other) {
+  public static br.com.hitbra.marketplace.avro.shops.ProDetails.Builder newBuilder(br.com.hitbra.marketplace.avro.shops.ProDetails other) {
     return new br.com.hitbra.marketplace.avro.shops.ProDetails.Builder(other);
   }
   
@@ -165,7 +165,7 @@ public class ProDetails extends org.apache.avro.specific.SpecificRecordBase impl
     }
     
     /** Sets the value of the 'corporate_name' field */
-    public br.com.hitbra.marketplace.avro.shops.ProDetails.Builder setCorporateName( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ProDetails.Builder setCorporateName(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.corporate_name = value;
       fieldSetFlags()[0] = true;
@@ -190,7 +190,7 @@ public class ProDetails extends org.apache.avro.specific.SpecificRecordBase impl
     }
     
     /** Sets the value of the 'identification_number' field */
-    public br.com.hitbra.marketplace.avro.shops.ProDetails.Builder setIdentificationNumber( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ProDetails.Builder setIdentificationNumber(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.identification_number = value;
       fieldSetFlags()[1] = true;
@@ -215,7 +215,7 @@ public class ProDetails extends org.apache.avro.specific.SpecificRecordBase impl
     }
     
     /** Sets the value of the 'tax_identification_number' field */
-    public br.com.hitbra.marketplace.avro.shops.ProDetails.Builder setTaxIdentificationNumber( java.lang.CharSequence value) {
+    public br.com.hitbra.marketplace.avro.shops.ProDetails.Builder setTaxIdentificationNumber(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.tax_identification_number = value;
       fieldSetFlags()[2] = true;
