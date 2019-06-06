@@ -1,0 +1,72 @@
+{
+    "type" : "record",
+    "name" : "Offer",
+    "namespace" : "br.com.hitbra.marketplace.avro.offers",
+    "fields" : [ {
+        "name" : "offer_id",
+        "type" : "long"
+    }, {
+        "name" : "active",
+        "type" : "boolean"
+    }, {
+        "name" : "deleted",
+        "type" : "boolean"
+    }, {
+        "name" : "shop_id",
+        "type" : "long"
+    }, {
+        "name" : "product_sku",
+        "type" : "string"
+    }, {
+        "name" : "shop_sku",
+        "type" : "string"
+    }, {
+        "name" : "price",
+        "type" : {
+          "type" : "record",
+          "name" : "OfferPriceDecimal",
+          "fields" : [ {
+            "name" : "precision",
+            "type" : "long"
+          }, {
+            "name" : "scale",
+            "type" : "long"
+          } ]
+        }
+    }, {
+        "name" : "origin_price",
+        "type" : [ "null", {
+          "type" : "record",
+          "name" : "OfferOriginPriceDecimal",
+          "fields" : [ {
+            "name" : "precision",
+            "type" : "long"
+          }, {
+            "name" : "scale",
+            "type" : "long"
+          } ]
+        } ]
+    }, {
+        "name" : "quantity",
+        "type" : "int"
+    }, {
+        "name" : "leadtime_to_ship",
+        "type" : "int"
+    }, {
+        "name" : "discount_start_date",
+        "logicalType": "time-millis",
+        "type" : [ "long", "null" ]
+    }, {
+        "name" : "discount_end_date",
+        "logicalType": "time-millis",
+        "type" : [ "long", "null" ]
+    }, {
+        "name" : "available_start_date",
+        "logicalType": "time-millis",
+        "type" : [ "long", "null" ]
+    }, {
+        "name" : "available_end_date",
+        "logicalType": "time-millis",
+        "type" : [ "long", "null" ]
+    } ]
+  }

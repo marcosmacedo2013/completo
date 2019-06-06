@@ -1,0 +1,83 @@
+{
+    "type" : "record",
+    "name" : "Order",
+    "namespace" : "br.com.hitbra.marketplace.avro.orders",
+    "fields" : [ {
+        "name" : "commercial_id",
+        "type" : "string"
+    }, {
+        "name" : "order_id",
+        "type" : "string"
+    }, {
+        "name" : "order_state",
+        "type" : "string"
+    }, {
+        "name" : "shop_id",
+        "type" : "long"
+    }, {
+        "name" : "order_lines",
+        "type" : {
+          "type" : "array",
+          "items" : {
+          "type" :  "record",
+                    "name" : "OrderLine",
+                    "fields" : [ {
+                      "name" : "order_line_id",
+                      "type" : "string"
+                    }, {
+                      "name" : "order_line_state",
+                      "type" : "string"
+                    }, {
+                      "name" : "product_sku",
+                      "type" : "string"
+                    }, {
+                      "name" : "offer_id",
+                      "type" : "long"
+                    }, {
+                      "name" : "offer_sku",
+                      "type" : "string"
+                    }, {
+                      "name" : "quantity",
+                      "type" : "int"
+                    }, {
+                      "name" : "received_date",
+                      "logicalType": "time-millis",
+                      "type" : [ "long", "null" ]
+                    }, {
+                      "name" : "shipped_date",
+                      "logicalType": "time-millis",
+                      "type" : [ "long", "null" ]
+            } ]
+          }
+        }
+    }, {
+        "name" : "shipping_carrier_code",
+        "type" : [ "string", "null" ]
+    }, {
+        "name" : "shipping_company",
+        "type" : [ "string", "null" ]
+    }, {
+        "name" : "shipping_tracking",
+        "type" : [ "string", "null" ]
+    }, {
+        "name" : "shipping_tracking_url",
+        "type" : [ "string", "null" ]
+    }, {
+        "name" : "delivery_date",
+        "logicalType": "time-millis",
+        "type" : [ "long", "null" ]
+    }, {
+        "name" : "invoice_access_key",
+        "type" : [ "string", "null" ]
+    }, {
+        "name" : "invoice_date",
+        "logicalType": "time-millis",
+        "type" : [ "long", "null" ]
+    }, {
+        "name" : "invoice_line",
+        "type" : [ "string", "null" ]
+    }, {
+        "name" : "invoice_number",
+        "type" : [ "string", "null" ]
+    }]
+  }
