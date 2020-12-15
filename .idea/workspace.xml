@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09c0ee23-7117-4d8e-a828-e445500c1b12" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/com/hitbra/dao/MongoDataStore.class" afterPath="$PROJECT_DIR$/target/classes/br/com/hitbra/dao/MongoDataStore.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvnw" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvnw.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/start.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/hitbra/dao/MongoDataStore.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/hitbra/dao/MongoDataStore.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,14 +17,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MongoDataStore.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/hitbra/dao/MongoDataStore.java">
+      <file leaf-file-name="start.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/start.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,6 +66,7 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/hitbra/WorkerOffer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/hitbra/dao/MongoDataStore.java" />
+        <option value="$PROJECT_DIR$/start.sh" />
       </list>
     </option>
   </component>
@@ -126,66 +124,6 @@
               <item name="completo" type="b2602c69:ProjectViewProjectNode" />
               <item name="completo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="completo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="completo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="completo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="completo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="completo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="completo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="completo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="completo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hitbra" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="completo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="completo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hitbra" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="completo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="completo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hitbra" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="completo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="completo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hitbra" type="462c0819:PsiDirectoryNode" />
-              <item name="marketplace" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="completo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="completo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -201,6 +139,11 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\marco\IdeaProjects\stock_001\completo" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -313,12 +256,12 @@
       <option name="presentableId" value="Default" />
       <updated>1559838355406</updated>
       <workItem from="1559838356630" duration="2167000" />
-      <workItem from="1608040966068" duration="1966000" />
+      <workItem from="1608040966068" duration="2753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4133000" />
+    <option name="totallyTimeSpent" value="4920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1066" extended-state="6" />
@@ -335,7 +278,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47634408" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67096776" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36344087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16494435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -683,8 +626,46 @@
         <state relative-caret-position="220">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1608042933667" expanded="true" signature="35:376" ph="..." />
+            <marker date="1608042933667" expanded="true" signature="1407:2506" ph="{...}" />
+            <marker date="1608042933667" expanded="true" signature="2553:3227" ph="{...}" />
+            <marker date="1608042933667" expanded="true" signature="3275:3954" ph="{...}" />
+            <marker date="1608042933667" expanded="true" signature="4002:4680" ph="{...}" />
+            <marker date="1608042933667" expanded="true" signature="4731:5425" ph="{...}" />
+            <marker date="1608042933667" expanded="true" signature="5482:5878" ph="{...}" />
+            <marker date="1608042933667" expanded="true" signature="5935:6331" ph="{...}" />
+            <marker date="1608042933667" expanded="true" signature="6387:6778" ph="{...}" />
+            <marker date="1608042933667" expanded="true" signature="6838:7249" ph="{...}" />
+            <marker date="1608042933667" expanded="true" signature="7309:7594" ph="{...}" />
+            <marker date="1608042933667" expanded="true" signature="7653:7933" ph="{...}" />
+            <marker date="1608042933667" expanded="true" signature="7996:8296" ph="{...}" />
+            <marker date="1608042933667" expanded="true" signature="8359:8955" ph="{...}" />
+            <marker date="1608042933667" expanded="false" signature="8653:8674" ph="&lt;~&gt;" />
+            <marker date="1608042933667" expanded="true" signature="9017:9610" ph="{...}" />
+            <marker date="1608042933667" expanded="false" signature="9308:9329" ph="&lt;~&gt;" />
+            <marker date="1608042933667" expanded="true" signature="9669:10259" ph="{...}" />
+            <marker date="1608042933667" expanded="false" signature="10047:10057" ph="&lt;~&gt;" />
+            <marker date="1608042933667" expanded="true" signature="10317:10903" ph="{...}" />
+            <marker date="1608042933667" expanded="false" signature="10692:10702" ph="&lt;~&gt;" />
+            <marker date="1608042933667" expanded="true" signature="10965:11567" ph="{...}" />
+            <marker date="1608042933667" expanded="false" signature="11352:11362" ph="&lt;~&gt;" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvnw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
