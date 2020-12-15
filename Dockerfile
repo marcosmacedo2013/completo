@@ -1,7 +1,12 @@
-FROM tomcat:9.0.1-jre8
-ENV CATALINA_OPTS="$CATALINA_OPTS -Duser.timezone=America/Sao_Paulo -Xms512m -Xmx2048m -XX:+UseParallelGC"
-ADD ./target/*.war $CATALINA_HOME/webapps/
-ADD ./target/context.xml $CATALINA_HOME/webapps/manager/META-INF/context.xml
-ADD ./target/context.xml $CATALINA_HOME/webapps/host-manager/META-INF/context.xml
-EXPOSE 8080
-CMD echo "000.000.000.000 hitbra.completo on" >> /etc/hosts; catalina.sh run;
+FROM maven:3.5.2-jdk-8 AS build
+COPY src /usr/src/app/src
+COPY pom.xml /usr/src/app
+RUN mvn -f /usr/src/app/pom.xml clean package
+
+FROM openjdk:8-jdk-alpine
+VOLUME /tmp
+ARG DEPENDENCY=/workspace/app/target/dependency
+COPY --from=build ${DEPENDENCY}/BOOT-INF/lib /app/lib
+COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
+COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
+ENTRYPOINT ["java","-cp","app:app/lib/*","br.com.hitbra.MediatorKafkaApplication"]
